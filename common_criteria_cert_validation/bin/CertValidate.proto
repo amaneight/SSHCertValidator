@@ -1,0 +1,54 @@
+package certvalidate;
+
+message Certificate_Cfg
+{
+    enum check_type 
+    {
+      MANDATORY = 0;
+      OPTIONAL = 1;
+      NOT_REQUIRED = 2;
+    }
+
+    message cert_check 
+    {
+      required string check_name = 1;
+      required string ctype = 2;
+    }
+
+    message pub_key
+    {
+      required int32 key_id = 1;
+      required string algo_name = 2;
+      required int32 bits = 3;
+    }
+    message key_usage
+    {
+      required int32 key_id = 1;
+      required string key_name = 2;
+    }
+    message extended_key_usage
+    {
+      required string dotted_string = 1;
+      required string name = 2;
+      required string display_name=3;
+    }
+
+    message signing_algo
+    {
+      required string algo_name = 1;
+    }
+   
+    required int32 cert_age = 1;
+    required string trust_store_path = 2;
+    
+    repeated pub_key PubKey = 3;
+    repeated key_usage KeyUsage = 4;
+    repeated extended_key_usage ExtKeyUsage = 5;
+    repeated signing_algo SignAlgo = 6;
+    repeated cert_check Check = 7; 
+	
+    required string preferred_mechanism = 8; // Valid Values - 'CRL' & 'OCSP'
+    required bool fail_status = 9;	// Indicates the behavior if revocation check could not be completed due to external reasons
+}
+
+

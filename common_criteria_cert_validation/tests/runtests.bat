@@ -1,0 +1,3 @@
+E:\DEV_ENV\Tools\python\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\python.exe -m coverage run --source  E:\DEV_ENV\Source\Git\git_implementation_repo\common_criteria_cert_validation\PyCertValidate --omit=*pyasn1_modules*,*__init__.py* -m unittest discover E:\DEV_ENV\Source\Git\git_implementation_repo\common_criteria_cert_validation\tests\
+
+E:\DEV_ENV\Tools\python\WinPython-64bit-2.7.10.3\python-2.7.10.amd64\python.exe -m coverage html -d E:\DEV_ENV\Tools\code_coverage\210316 --title="[21st Mar] Cert Validation Code Coverage"

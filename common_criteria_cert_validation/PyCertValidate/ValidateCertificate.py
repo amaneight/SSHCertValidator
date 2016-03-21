@@ -12,8 +12,8 @@ import requests
 #import certmessage_pb2
 
 
-from Crypto import *
-from Crypto.Util import asn1
+#from Crypto import *
+#from Crypto.Util import asn1
 
 from datetime import date
 from dateutil.relativedelta import relativedelta

@@ -7,30 +7,30 @@ import OpenSSL
 
 class TestUtil(unittest.TestCase):
     
-    global msg
-    global main_list
+    global msg, main_list, certpath, cert
     main_list = [1, 2, 3, 4, 5]
     msg = '#### TEST FAILED !'
+    certpath = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/citi.pem'
+    certfile = open(certpath, 'r').read()
+    cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile)
     
     def setUp(self):
         unittest.TestCase.setUp(self)
         main_list = [1, 2, 3, 4, 5]
+        certfile = open(certpath, 'r').read()
+        cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile)
     
     def test_less_than_true(self):    
-        self.assertTrue(util.less_than(2, 3), msg)
-    
+        self.assertTrue(util.less_than(2, 3), msg)    
     
     def test_less_than_false(self):
-        self.assertFalse(util.less_than(3, 2), msg)
-    
+        self.assertFalse(util.less_than(3, 2), msg)    
     
     def test_greater_than_true(self):
-        self.assertTrue(util.greater_than(3, 2), msg)
-    
+        self.assertTrue(util.greater_than(3, 2), msg)    
     
     def test_greater_than_false(self):
-        self.assertFalse(util.greater_than(2, 3), msg)
-        
+        self.assertFalse(util.greater_than(2, 3), msg)        
     
     def test_less_than_eq_true(self):
         self.assertTrue(util.less_than_eq(2,3), msg)
@@ -57,6 +57,9 @@ class TestUtil(unittest.TestCase):
     
     def test_present_in_false(self):
         self.assertFalse(util.present_in(7, main_list), msg)
+        
+    def test_get_extension(self):
+        self.assertIsNotNone(util.get_extension(cert), msg)
             
 if __name__ == "__main__":
     unittest.main()

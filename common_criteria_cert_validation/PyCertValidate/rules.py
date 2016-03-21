@@ -4,8 +4,8 @@ from Usage import *
 from Revocation import *
 from TrustStore import *
 from cert_proto_get import GetCertConfig
-from Crypto import *
-from Crypto.Util import asn1
+#from Crypto import *
+#from Crypto.Util import asn1
 from PublicKey import *
 import OpenSSL
 
@@ -75,15 +75,15 @@ class CertRules(object):
 
 	def check_ocsp(self):
 	
-		cert_url = self.revocation_obj.get_ocsp_url()
+		cert_ocsp_url = self.revocation_obj.get_ocsp_url()
 		
 		#is_cert_name, 
-		is_cert_obj = self.trust_store_obj.get_issuer("TrustStore/*.cer")#self.config_obj.trust_store_path
+		issuer_cert_obj = self.trust_store_obj.get_issuer("TrustStore/*.cer")#self.config_obj.trust_store_path
 		
-		if is_cert_obj == False:
+		if issuer_cert_obj == False:
 			return False
 		else:
-			revocation_obj = Revocation(is_cert_obj)
+			revocation_obj = Revocation(issuer_cert_obj)
 			is_cert_url = revocation_obj.get_ocsp_url()
 
 			if is_cert_url == False:

@@ -1,0 +1,179 @@
+2016-03-21 12:47:20,594 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:47:20,670 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:47:20,670 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:47:20,677 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:47:20,677 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:47:20,677 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:48:10,230 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:48:10,232 - debug_logger - ERROR - Element - [6, 'RSA', 1024]
+2016-03-21 12:48:10,234 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:48:10,234 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:48:10,236 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:48:10,236 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:48:10,240 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:48:10,240 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:48:10,240 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:48:10,243 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:48:10,243 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:48:10,243 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:49:37,463 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:49:37,466 - debug_logger - ERROR - Element - [6, 'RSA', 1024]
+2016-03-21 12:49:37,467 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:49:37,467 - debug_logger - INFO - True
+2016-03-21 12:49:37,470 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:49:37,470 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:49:37,471 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:49:37,471 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:49:37,474 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:49:37,474 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:49:37,477 - debug_logger - INFO - True
+2016-03-21 12:49:37,477 - debug_logger - INFO - True
+2016-03-21 12:49:37,483 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:49:37,483 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:49:37,483 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:49:37,487 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:49:37,487 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:49:37,487 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:49:37,492 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:49:37,492 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:49:37,492 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:49:37,496 - debug_logger - INFO - True
+2016-03-21 12:49:37,496 - debug_logger - INFO - True
+2016-03-21 12:49:37,496 - debug_logger - INFO - True
+2016-03-21 12:50:15,405 - debug_logger - INFO - ------------ START --------------
+2016-03-21 12:50:15,407 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:50:15,408 - debug_logger - ERROR - Element - [6, 'RSA', 1024]
+2016-03-21 12:50:15,411 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:50:15,411 - debug_logger - INFO - True
+2016-03-21 12:50:15,414 - debug_logger - INFO - ------------ START --------------
+2016-03-21 12:50:15,414 - debug_logger - INFO - ------------ START --------------
+2016-03-21 12:50:15,417 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:50:15,417 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:50:15,418 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:50:15,418 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:50:15,421 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:50:15,421 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:50:15,423 - debug_logger - INFO - True
+2016-03-21 12:50:15,423 - debug_logger - INFO - True
+2016-03-21 12:50:15,428 - debug_logger - INFO - ------------ START --------------
+2016-03-21 12:50:15,428 - debug_logger - INFO - ------------ START --------------
+2016-03-21 12:50:15,428 - debug_logger - INFO - ------------ START --------------
+2016-03-21 12:50:15,437 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:50:15,437 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:50:15,437 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 12:50:15,440 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:50:15,440 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:50:15,440 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:50:15,446 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:50:15,446 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:50:15,446 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:50:15,448 - debug_logger - INFO - True
+2016-03-21 12:50:15,448 - debug_logger - INFO - True
+2016-03-21 12:50:15,448 - debug_logger - INFO - True
+2016-03-21 12:51:10,092 - debug_logger - INFO - ------------ START --------------
+2016-03-21 12:51:10,094 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 12:51:10,095 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 12:51:10,096 - debug_logger - INFO - Element & key type matched
+2016-03-21 12:51:10,098 - debug_logger - INFO - True
+2016-03-21 13:02:36,233 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:02:36,236 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:02:36,236 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:02:36,237 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:02:36,239 - debug_logger - ERROR - Element - [6, 'RSA', 4096]
+2016-03-21 13:02:36,240 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:10,384 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:10,385 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:03:10,387 - debug_logger - ERROR - Element - [6, 'RSA', 1024]
+2016-03-21 13:03:10,388 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:10,391 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:10,391 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:10,394 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:03:10,394 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:03:10,397 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:03:10,397 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:03:10,398 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:10,398 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:10,401 - debug_logger - ERROR - Element - [6, 'RSA', 4096]
+2016-03-21 13:03:10,401 - debug_logger - ERROR - Element - [6, 'RSA', 4096]
+2016-03-21 13:03:10,404 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:10,404 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:10,407 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:10,407 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:10,407 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:10,410 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:03:10,410 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:03:10,410 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:03:10,414 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:03:10,414 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:03:10,414 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:03:10,417 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:10,417 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:10,417 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:37,660 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:37,661 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:03:37,663 - debug_logger - ERROR - Element - [6, 'RSA', 1024]
+2016-03-21 13:03:37,664 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:37,664 - debug_logger - INFO - Certificate key belongs to a supported key size.1024
+2016-03-21 13:03:37,667 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:37,667 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:37,670 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:03:37,670 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:03:37,671 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:03:37,671 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:03:37,674 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:37,674 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:37,677 - debug_logger - ERROR - Element - [6, 'RSA', 4096]
+2016-03-21 13:03:37,677 - debug_logger - ERROR - Element - [6, 'RSA', 4096]
+2016-03-21 13:03:37,678 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:37,678 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:37,681 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:37,681 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:37,681 - debug_logger - INFO - ------------ START --------------
+2016-03-21 13:03:37,684 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:03:37,684 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:03:37,684 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:03:37,687 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:03:37,687 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:03:37,687 - debug_logger - ERROR - Element - [6, 'RSA', 2048]
+2016-03-21 13:03:37,691 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:37,691 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:37,691 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:03:37,694 - debug_logger - INFO - Certificate key belongs to a supported key size.2048
+2016-03-21 13:03:37,694 - debug_logger - INFO - Certificate key belongs to a supported key size.2048
+2016-03-21 13:03:37,694 - debug_logger - INFO - Certificate key belongs to a supported key size.2048
+2016-03-21 13:06:10,411 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:06:10,411 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:06:10,414 - debug_logger - INFO - Certificate key belongs to a supported key size.1024
+2016-03-21 13:06:10,415 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:06:10,415 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:06:10,417 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:06:10,417 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:06:10,420 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:06:10,420 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:06:10,424 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:06:10,424 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:06:10,424 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:06:10,427 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:06:10,427 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:06:10,427 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:06:10,430 - debug_logger - INFO - Certificate key belongs to a supported key size.2048
+2016-03-21 13:06:10,430 - debug_logger - INFO - Certificate key belongs to a supported key size.2048
+2016-03-21 13:06:10,430 - debug_logger - INFO - Certificate key belongs to a supported key size.2048
+2016-03-21 13:07:57,421 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:07:57,423 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:07:57,424 - debug_logger - INFO - Certificate key belongs to a supported key size.1024
+2016-03-21 13:07:57,427 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:07:57,427 - debug_logger - ERROR - Checking key with 6 & 1024
+2016-03-21 13:07:57,428 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:07:57,428 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:07:57,431 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:07:57,431 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:07:57,434 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:07:57,434 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:07:57,434 - debug_logger - ERROR - Checking key with 6 & 2048
+2016-03-21 13:07:57,438 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:07:57,438 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:07:57,438 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:07:57,441 - debug_logger - INFO - Certificate key belongs to a supported key size.2048
+2016-03-21 13:07:57,441 - debug_logger - INFO - Certificate key belongs to a supported key size.2048
+2016-03-21 13:07:57,441 - debug_logger - INFO - Certificate key belongs to a supported key size.2048

@@ -5,8 +5,10 @@ import sys
 
 class GetCertConfig(object):
 
-  def __init__(self):
-    f = open("a.txt", "rb")
+  def __init__(self):    
+
+    protopath = "E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation\\PyCertValidate\\a.txt"
+    f = open(protopath, "rb")
     cert = CertValidate_pb2.Certificate_Cfg()
     cert.ParseFromString(f.read())
     f.close()

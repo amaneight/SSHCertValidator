@@ -7,7 +7,7 @@ def get_custom_logger(name, default_level, logfile):
     logger.setLevel(default_level)    
     
     filehandler = logging.FileHandler(logfile)
-    format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    format = '%(asctime)s - %(name)s - %(levelname)s - %(funcName)s - %(message)s'
     formatter = logging.Formatter(format)    
     filehandler.setFormatter(formatter)    
     logger.addHandler(filehandler)

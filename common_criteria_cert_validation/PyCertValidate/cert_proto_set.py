@@ -72,14 +72,21 @@ def PromptForConfigurations(cert):
   cert.fail_status = bool(raw_input("Allow certificate if revocation check fails (True / False)? : "))
         
 
-cert = CertValidate_pb2.Certificate_Cfg()
+def update_config(config, file_name):
+    f = open(file_name, "wb")
+    f.write(config.SerializeToString())
+    print "\nCertificate validation constraints written into file %s " %(file_name)
+    f.close()
+    
+def update_default_config():
 
-file_name = raw_input("\nEnter file name : ")
+    config = CertValidate_pb2.Certificate_Cfg()
+    
+    cert.cert_age = 3
+    cert.trust_store_path = "./default_truststore/"
+  
+    update_config(config, file_name)
 
-PromptForConfigurations(cert)
 
 
-f = open(file_name, "wb")
-f.write(cert.SerializeToString())
-print "\nCertificate validation constraints written into file %s " %(file_name)
-f.close()
+

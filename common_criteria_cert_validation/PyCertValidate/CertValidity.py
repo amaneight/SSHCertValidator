@@ -34,7 +34,7 @@ class CertValidity(object):
 
 
 
-	def check_period(self,duration):
+	def check_period(self, acceptable_duration_in_years):
 
 		'''
 		Check if certificate life is not more than n years. Where, n = duration.
@@ -49,8 +49,11 @@ class CertValidity(object):
 		self.logger.info("Certificate end date : " + str(EndDate))
 
 		CurrDate = date.today()
-
-		if CurrDate > StartDate and (EndDate.year - StartDate.year) <= duration:
+		
+		cert_validity_in_days = (EndDate - StartDate).days
+		acceptable_duration_in_days = acceptable_duration_in_years*365
+		
+		if CurrDate > StartDate and cert_validity_in_days <= acceptable_duration_in_days:
 			self.logger.info("Validity period does not exceed 3 years")
 			return True
 		else:

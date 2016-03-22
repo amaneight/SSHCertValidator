@@ -4,7 +4,6 @@ sys.path.append("E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_crite
 sys.path.append("E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation\\PyCertValidate")
 from PyCertValidate.rules import *
 import OpenSSL
-from cryptography.x509.oid import ExtensionOID
 
 class TestRules(unittest.TestCase):
     

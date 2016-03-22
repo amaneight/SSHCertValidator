@@ -8,6 +8,8 @@ from cert_proto_get import GetCertConfig
 #from Crypto.Util import asn1
 from PublicKey import *
 import OpenSSL
+from cryptography.x509.oid import ExtensionOID
+from logging.cert_validation_loggers import *
 
 class CertRules(object):
 
@@ -15,6 +17,8 @@ class CertRules(object):
 		# c = OpenSSL.crypto
 		# st_cert = open("Citi.cer", 'rt').read() 
 		# cert = c.load_certificate(c.FILETYPE_PEM, st_cert)
+		
+		self.logger = get_audit_logger()
 
 		self.cert = cert
 		self.config_obj = GetCertConfig()
@@ -25,6 +29,7 @@ class CertRules(object):
 		self.usage_obj = Usage()
 		self.pubkey_obj = PublicKey(cert)
 		self.ext_dict = get_extension(cert)
+		self.config_obj.trust_store_path = "E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation\\PyCertValidate\\truststore\\*.cer"
 		
 
 	def check_validity(self):
@@ -37,7 +42,7 @@ class CertRules(object):
 		return self.valid_obj.check_period(self.config_obj.cert_age)
 
 	def check_issuer(self):
-		res = self.trust_store_obj.get_issuer("TrustStore/*.cer")#self.config_obj.trust_store_path)
+		res = self.trust_store_obj.get_issuer(self.config_obj.trust_store_path)#self.config_obj.trust_store_path)
 		if res == False:
 			return False
 		return True
@@ -68,7 +73,7 @@ class CertRules(object):
 			#print element[0]
 			req_extusage_list.append(element[0])
 
-		return self.usage_obj.extkey_usage_chk(self.cert,self.ext_dict['extendedKeyUsage'],req_extusage_list)
+		return self.usage_obj.extkey_usage_chk(self.cert,self.ext_dict[ExtensionOID.EXTENDED_KEY_USAGE._name],req_extusage_list)
 
 	def check_crl(self):
 		return self.revocation_obj.crl_check()
@@ -77,19 +82,25 @@ class CertRules(object):
 	
 		cert_ocsp_url = self.revocation_obj.get_ocsp_url()
 		
+		self.logger.info("Truststore Path - " + self.config_obj.trust_store_path)
+		self.logger.info("OCSP URL for cert - " + cert_ocsp_url)
+		
 		#is_cert_name, 
-		issuer_cert_obj = self.trust_store_obj.get_issuer("TrustStore/*.cer")#self.config_obj.trust_store_path
+		issuer_cert_obj = self.trust_store_obj.get_issuer(self.config_obj.trust_store_path)#self.config_obj.trust_store_path
+		self.logger.info(type(issuer_cert_obj))
 		
 		if issuer_cert_obj == False:
 			return False
 		else:
 			revocation_obj = Revocation(issuer_cert_obj)
 			is_cert_url = revocation_obj.get_ocsp_url()
-
+			self.logger.info("Issuer cert OCSP URL - " + is_cert_url)
+				
 			if is_cert_url == False:
 				return False
 			else:
-				res = self.revocation_obj.get_ocsp_status(is_cert_obj,cert_url,is_cert_url)
+				res = self.revocation_obj.get_ocsp_status(issuer_cert_obj,cert_ocsp_url,is_cert_url)
+				self.logger.info("OCSP Result = " + str(res))
 				if res == True:
 					return True
 				else:

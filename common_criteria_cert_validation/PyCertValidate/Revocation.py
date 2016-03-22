@@ -9,6 +9,7 @@ import requests
 from pyasn1.codec.der import decoder as der_decoder
 import pyasn1_modules.rfc2560
 import time
+from cryptography.x509.oid import ExtensionOID, AuthorityInformationAccessOID
 
 class Revocation(object):
 
@@ -26,7 +27,7 @@ class Revocation(object):
             #print ext_name
 
             authInfoAccessSyntax = AuthorityInfoAccessSyntax()
-            if ext_name == 'authorityInfoAccess':
+            if ext_name == ExtensionOID.AUTHORITY_INFORMATION_ACCESS._name:
 
                 ext_dat = ext.get_data()
                 decoded_dat = der_decoder.decode(ext_dat, 
@@ -38,7 +39,7 @@ class Revocation(object):
                         for entry in range(len(authInfoAccess)):
                             accessDescription = authInfoAccess.getComponentByPosition(entry)
                             accessMethod = str(accessDescription.getComponentByName('accessMethod'))
-                            ocsp_oid = '1.3.6.1.5.5.7.48.1'
+                            ocsp_oid = AuthorityInformationAccessOID.OCSP.dotted_string
                             if  ocsp_oid == accessMethod:
                                 ocsp_url_generalname = accessDescription.getComponentByName('accessLocation')
                                 ocsp_url = ocsp_url_generalname.getComponentByName('uniformResourceIdentifier')
@@ -110,15 +111,17 @@ class Revocation(object):
             ext_name = ext.get_short_name()
             #print ext_name
             
-            if ext_name == 'crlDistributionPoints':
+            # There is a difference in the string name defined for CRL Distribution Points 
+            # in PyOpenSSL & cryptography packages (crlDistributionPoints vs cRLDistributionPoints). 
+            # Hence, converting name to lowercase to prevent any error.
+            # Such difference is not present for other extensions.
+            if ext_name.lower() == (ExtensionOID.CRL_DISTRIBUTION_POINTS._name).lower():
                 # PyOpenSSL returns extension data in ASN.1 encoded form
                 ext_dat = ext.get_data()
                 decoded_dat = der_decoder.decode(ext_dat, 
                                                  asn1Spec=crl_dist_points)
                 
-                for name in decoded_dat:
-
-                    
+                for name in decoded_dat:                    
                     if isinstance(name, CRLDistPointsSyntax):
                         for entry in range(len(name)):
 

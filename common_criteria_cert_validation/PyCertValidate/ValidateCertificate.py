@@ -1,8 +1,6 @@
 from cert_proto_get import GetCertConfig
 from rules import CertRules
 
-import logging
-
 import re
 import sys
 import glob

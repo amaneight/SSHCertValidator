@@ -1,5 +1,5 @@
 
-from logging.cert_validation_loggers import *
+from loggers.cert_validation_loggers import *
 
 class PublicKey(object):
 

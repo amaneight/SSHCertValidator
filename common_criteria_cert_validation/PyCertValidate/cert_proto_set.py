@@ -2,7 +2,7 @@
 
 import CertValidate_pb2
 import sys
-from logging.cert_validation_loggers import *
+from loggers.cert_validation_loggers import *
 
 
 def PromptForConfigurations(cert):

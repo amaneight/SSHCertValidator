@@ -9,7 +9,7 @@ from cert_proto_get import GetCertConfig
 from PublicKey import *
 import OpenSSL
 from cryptography.x509.oid import ExtensionOID
-from logging.cert_validation_loggers import *
+from loggers.cert_validation_loggers import *
 
 class CertRules(object):
 

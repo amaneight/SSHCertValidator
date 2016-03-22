@@ -1,6 +1,6 @@
 import glob
 import OpenSSL
-from logging.cert_validation_loggers import *
+from loggers.cert_validation_loggers import *
 
 class TrustStore(object):
 

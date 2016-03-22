@@ -1,7 +1,7 @@
 #! /usr/bin/python
 from datetime import date
 from dateutil.relativedelta import relativedelta
-from logging.cert_validation_loggers import *
+from loggers.cert_validation_loggers import *
 
 class CertValidity(object):
 

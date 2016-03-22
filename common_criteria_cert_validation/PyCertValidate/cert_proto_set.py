@@ -5,7 +5,7 @@ import sys
 from loggers.cert_validation_loggers import *
 
 
-def PromptForConfigurations(cert):
+def PromptForConfigurations(cert): # pragma: no cover
   cert.cert_age = int(raw_input("Enter certificate age : "))
   cert.trust_store_path = raw_input("Enter trust store path : ")
 

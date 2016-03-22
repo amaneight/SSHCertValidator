@@ -44,7 +44,7 @@ class ValidateCert(object):
 			
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': # pragma: no cover
 #logging.basicConfig(filename="D:\Nutanix\example.log", level=logging.DEBUG)
 
 	c = OpenSSL.crypto

@@ -13,16 +13,15 @@ from cryptography.x509.oid import ExtensionOID, AuthorityInformationAccessOID
 
 class Revocation(object):
 
-    def __init__(self,cert):
-        self.cert = cert
 
-    def get_ocsp_url(self):
+
+    def get_ocsp_url(self,cert):
         
         crl_dist_points = CRLDistPointsSyntax()
 
-        for index in range(self.cert.get_extension_count()):
+        for index in range(cert.get_extension_count()):
             
-            ext = self.cert.get_extension(index)
+            ext = cert.get_extension(index)
             ext_name = ext.get_short_name()
             #print ext_name
 
@@ -47,11 +46,11 @@ class Revocation(object):
                                 return str(ocsp_url)
         return False                        
 
-    def get_ocsp_status(self,is_cert,cert_url,is_cert_url):
+    def get_ocsp_status(self,cert,is_cert,cert_url,is_cert_url):
         t0 = time.clock()
         #print "Issuer Certificate is >> %s" %(is_cert_name)
         c = OpenSSL.crypto
-        id_cert_buf = c.dump_certificate(c.FILETYPE_PEM, self.cert)
+        id_cert_buf = c.dump_certificate(c.FILETYPE_PEM, cert)
         issuer_cert_buf = c.dump_certificate(c.FILETYPE_PEM, is_cert)
         # with open(cert_name,"rb") as f:
         #     id_cert_buf = f.read()
@@ -99,15 +98,15 @@ class Revocation(object):
                     else:
                         return False
 
-    def crl_check(self):
+    def crl_check(self,cert,is_cert):
 
         t0 = time.clock()
 
         crl_dist_points = CRLDistPointsSyntax()
 
-        for i in range(self.cert.get_extension_count()):
+        for i in range(cert.get_extension_count()):
         
-            ext = self.cert.get_extension(i)
+            ext = cert.get_extension(i)
             ext_name = ext.get_short_name()
             #print ext_name
             
@@ -142,7 +141,7 @@ class Revocation(object):
                                 
                                 revoked_data = crl_tuples.get_revoked()
 
-                                curr_serial = format(self.cert.get_serial_number(),'x').upper()
+                                curr_serial = format(cert.get_serial_number(),'x').upper()
                                 print "No. of entries %r" %(len(revoked_data))
                                 for element in revoked_data:
                                     if curr_serial == element.get_serial():

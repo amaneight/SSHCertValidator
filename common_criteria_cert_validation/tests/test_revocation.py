@@ -1,6 +1,6 @@
 import unittest
 import sys
-
+sys.path.append("E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation")
 from PyCertValidate.Revocation import *
 import OpenSSL
 
@@ -10,11 +10,11 @@ class TestRevocation(unittest.TestCase):
     
     msg = '#### TEST FAILED !'
     
-    certpath = 'Citi.pem'
+    certpath = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/citi.pem'    
     certfile = open(certpath, 'r').read()
     cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile)
     
-    certpath_revoked = 'Citi.pem'    
+    certpath_revoked = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/self_signed_1024.pem'    
     certfile_revoked = open(certpath_revoked, 'r').read()
     cert_revoked = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile_revoked)
     

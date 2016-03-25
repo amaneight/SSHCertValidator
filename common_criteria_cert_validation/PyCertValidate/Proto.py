@@ -151,9 +151,3 @@ class Proto(object):
     print "Preferred revocation mechanism : %r" %(config_obj.preferred_mechanism)
     print "Fail status : %r"  %(config_obj.fail_status)
     
-        
-    
-
-    
-    
-    

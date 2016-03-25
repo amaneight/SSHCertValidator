@@ -1,6 +1,6 @@
 import unittest
 import sys
-#sys.path.append("E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation")
+sys.path.append("E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation")
 from PyCertValidate.CertValidity import *
 import OpenSSL
 
@@ -10,15 +10,15 @@ class TestCertValidity(unittest.TestCase):
     
     msg = '#### TEST FAILED !'
     
-    certpath = 'Citi.pem'    
+    certpath = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/citi.pem'    
     certfile = open(certpath, 'r').read()
     cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile)
     
-    certpath = 'Citi.pem'
+    certpath = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/longduration_cert.pem'
     certfile_longduration = open(certpath, 'r').read()
     cert_longduration = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile_longduration)
     
-    certpath = 'Citi.pem'
+    certpath = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/expired_cert.pem'
     certfile_expired = open(certpath, 'r').read()
     cert_expired = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile_expired)
     

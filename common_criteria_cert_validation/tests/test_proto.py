@@ -9,13 +9,11 @@ import texttable as tt
 from PyCertValidate.Proto import *
 
 
-print "sys added"
-
 class TestProto(unittest.TestCase):
     
     global path, msg,config, cert_config,keyusage_extension, ext_keyusage_extension, required_EKUs, other_EKUs
     
-    msg = '#### TEST FAILED !'
+    msg = "#### TEST FAILED !"
     
     path = 'D:\PyCertValidate\Final Implementation\PyCertValidate\example.cfg'
     config = ConfigParser.RawConfigParser()    

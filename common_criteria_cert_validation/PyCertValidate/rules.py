@@ -35,9 +35,6 @@ class CertRules(object):
 	def check_validity(self):
 		return self.valid_obj.check_validity()
 
-	def check_expiry(self):
-		return self.valid_obj.check_expiry()
-
 	def check_period(self):
 		return self.valid_obj.check_period(self.config_obj.cert_age)
 

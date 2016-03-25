@@ -1,0 +1,260 @@
+2016-03-21 13:59:13,312 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 13:59:13,313 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:59:13,313 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 13:59:13,315 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 13:59:13,315 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 13:59:13,315 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:59:13,315 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:59:13,315 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:59:13,315 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:59:13,315 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 13:59:13,315 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 13:59:13,315 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 13:59:13,315 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 13:59:13,315 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 13:59:13,316 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:59:13,316 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:59:13,316 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 13:59:13,316 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 13:59:13,316 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 13:59:13,316 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:12:02,500 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:12:02,500 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:02,502 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 14:12:02,502 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:12:02,502 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:12:02,502 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:02,502 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:02,503 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:02,503 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:02,503 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 14:12:02,503 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 14:12:02,503 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:12:02,503 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:12:02,503 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:12:02,503 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:02,503 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:02,503 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:02,503 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:12:02,503 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:12:02,503 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:12:19,466 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:12:19,466 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:19,466 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 14:12:19,467 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:12:19,467 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:12:19,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:19,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:19,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:19,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:19,467 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 14:12:19,467 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 14:12:19,467 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:12:19,467 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:12:19,467 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:12:19,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:19,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:19,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:12:19,469 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:12:19,469 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:12:19,469 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:14:00,516 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:14:00,516 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:00,516 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 14:14:00,516 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:14:00,516 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:14:00,516 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:00,516 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:00,516 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:00,516 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:00,516 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 14:14:00,516 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 14:14:00,517 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:14:00,517 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:14:00,517 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:14:00,519 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:00,519 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:00,519 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:00,519 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:14:00,519 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:14:00,519 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:14:17,311 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:14:17,311 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:17,311 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 14:14:17,312 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:14:17,312 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 14:14:17,312 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:17,312 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:17,312 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:17,312 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:17,312 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 14:14:17,312 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 14:14:17,312 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:14:17,312 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:14:17,312 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 14:14:17,313 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:17,313 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:17,313 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 14:14:17,313 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:14:17,313 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 14:14:17,313 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:02:58,619 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:02:58,619 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:02:58,619 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 15:02:58,621 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:02:58,621 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:02:58,621 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:02:58,621 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:02:58,621 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:02:58,621 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:02:58,621 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:02:58,621 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:02:58,621 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:02:58,621 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:02:58,621 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:02:58,621 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:02:58,621 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:02:58,621 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:02:58,621 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:02:58,621 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:02:58,621 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:20:48,467 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:20:48,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:20:48,467 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 15:20:48,467 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:20:48,467 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:20:48,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:20:48,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:20:48,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:20:48,467 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:20:48,469 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:20:48,469 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:20:48,469 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:20:48,469 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:20:48,469 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:20:48,469 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:20:48,469 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:20:48,469 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:20:48,470 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:20:48,470 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:20:48,470 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:32:36,693 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:32:36,694 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:32:36,694 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 15:32:36,694 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:32:36,694 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:32:36,694 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:32:36,694 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:32:36,694 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:32:36,694 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:32:36,694 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:32:36,694 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:32:36,694 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:32:36,694 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:32:36,694 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:32:36,696 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:32:36,696 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:32:36,696 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:32:36,696 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:32:36,696 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:32:36,696 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:33:38,717 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:33:38,717 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:33:38,717 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 15:33:38,719 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:33:38,719 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:33:38,719 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:33:38,719 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:33:38,719 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:33:38,719 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:33:38,719 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:33:38,719 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:33:38,720 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:33:38,720 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:33:38,720 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:33:38,720 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:33:38,720 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:33:38,720 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:33:38,720 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:33:38,720 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:33:38,720 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:34:16,842 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:34:16,842 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:16,842 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 15:34:16,842 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:34:16,842 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:34:16,842 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:16,842 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:16,842 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:16,842 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:16,842 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:34:16,842 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:34:16,844 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:34:16,844 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:34:16,844 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:34:16,844 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:16,844 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:16,844 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:16,845 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:34:16,845 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:34:16,845 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:34:34,227 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:34:34,227 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:34,227 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 15:34:34,229 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:34:34,229 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:34:34,229 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:34,229 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:34,229 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:34,229 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:34,229 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:34:34,229 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:34:34,230 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:34:34,230 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:34:34,230 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:34:34,230 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:34,230 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:34,230 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:34:34,230 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:34:34,230 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:34:34,230 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:36:44,670 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:36:44,670 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:36:44,670 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 15:36:44,671 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:36:44,671 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 15:36:44,671 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:36:44,671 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:36:44,671 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:36:44,671 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:36:44,671 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:36:44,671 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 15:36:44,671 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:36:44,671 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:36:44,671 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 15:36:44,671 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:36:44,671 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:36:44,671 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 15:36:44,671 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:36:44,671 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 15:36:44,671 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 16:20:09,516 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 16:20:09,516 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 16:20:09,516 - debug_logger - INFO - Certificate key belongs to a supported key size : 1024
+2016-03-21 16:20:09,519 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 16:20:09,519 - debug_logger - INFO - Checking key with type : 6 & size : 1024
+2016-03-21 16:20:09,519 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 16:20:09,519 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 16:20:09,519 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 16:20:09,519 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 16:20:09,519 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 16:20:09,519 - debug_logger - ERROR - Certificate key does not belong to a supported key type or size.
+2016-03-21 16:20:09,522 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 16:20:09,522 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 16:20:09,522 - debug_logger - INFO - Checking key with type : 6 & size : 2048
+2016-03-21 16:20:09,523 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 16:20:09,523 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 16:20:09,523 - debug_logger - INFO - Certificate key belongs to a supported key type : RSA
+2016-03-21 16:20:09,523 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 16:20:09,523 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048
+2016-03-21 16:20:09,523 - debug_logger - INFO - Certificate key belongs to a supported key size : 2048

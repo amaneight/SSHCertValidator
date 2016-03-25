@@ -2,12 +2,17 @@
 
 import CertValidate_pb2
 import sys
+import os
 
 class GetCertConfig(object):
 
   def __init__(self):    
 
-    protopath = "Proto.txt"
+    this_dir_path = os.path.dirname(os.path.abspath(__file__))
+    protopath = this_dir_path + "./Proto.txt"
+    
+    print "****" + os.path.abspath(protopath)
+    
     f = open(protopath, "rb")
     config = CertValidate_pb2.Certificate_Cfg()
     config.ParseFromString(f.read())

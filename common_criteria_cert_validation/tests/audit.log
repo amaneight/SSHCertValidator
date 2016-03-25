@@ -1,0 +1,267 @@
+2016-03-21 13:37:10,572 - audit_logger - INFO - Certificate is valid
+2016-03-21 13:40:30,553 - audit_logger - INFO - Certificate is valid
+2016-03-21 13:40:30,553 - audit_logger - INFO - Certificate is valid
+2016-03-21 13:40:57,163 - audit_logger - INFO - Certificate is valid
+2016-03-21 13:40:57,163 - audit_logger - INFO - Certificate is valid
+2016-03-21 13:43:40,611 - audit_logger - INFO - Certificate is valid
+2016-03-21 13:43:40,611 - audit_logger - INFO - Certificate is valid
+2016-03-21 13:45:22,002 - audit_logger - INFO - Certificate is valid
+2016-03-21 13:45:22,002 - audit_logger - INFO - Certificate is valid
+2016-03-21 13:59:13,311 - audit_logger - INFO - Certificate is valid
+2016-03-21 13:59:13,311 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:12:02,500 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:12:02,500 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:12:02,500 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:12:19,464 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:12:19,464 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:12:19,464 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:14:00,515 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:14:00,515 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:14:00,515 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:14:17,309 - audit_logger - INFO - Certificate is invalid
+2016-03-21 14:14:17,309 - audit_logger - INFO - Certificate is invalid
+2016-03-21 14:14:17,309 - audit_logger - INFO - Certificate is invalid
+2016-03-21 14:14:17,309 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:14:17,309 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:14:17,309 - audit_logger - INFO - Certificate is valid
+2016-03-21 14:14:17,309 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:02:58,615 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:02:58,615 - audit_logger - INFO - Certificate end date : 2019-03-26
+2016-03-21 15:02:58,615 - audit_logger - ERROR - Validity period exceeds 3 years
+2016-03-21 15:02:58,615 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:02:58,615 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:02:58,617 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:02:58,617 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:02:58,617 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:02:58,617 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:02:58,617 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:02:58,617 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:02:58,617 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate is invalid
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate is invalid
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate is invalid
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:02:58,618 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:20:48,461 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:20:48,461 - audit_logger - INFO - Certificate end date : 2019-03-26
+2016-03-21 15:20:48,461 - audit_logger - ERROR - Validity period exceeds 3 years
+2016-03-21 15:20:48,463 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:20:48,463 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:20:48,463 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:20:48,463 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:20:48,463 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:20:48,463 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:20:48,463 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:20:48,463 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:20:48,463 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:20:48,463 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:20:48,463 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:20:48,463 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:20:48,464 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:20:48,464 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:20:48,464 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:20:48,466 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:32:36,687 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:32:36,687 - audit_logger - INFO - Certificate end date : 2019-03-26
+2016-03-21 15:32:36,687 - audit_logger - ERROR - Validity period exceeds 3 years
+2016-03-21 15:32:36,688 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:32:36,688 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:32:36,688 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:32:36,688 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:32:36,688 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:32:36,688 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:32:36,690 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:32:36,690 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:32:36,690 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:32:36,690 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:32:36,690 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:32:36,690 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:32:36,690 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:32:36,690 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:32:36,690 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:32:36,691 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:32:36,691 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:32:36,691 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:32:36,691 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:32:36,691 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:32:36,691 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:32:36,691 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:32:36,691 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:32:36,693 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:32:36,693 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:32:36,693 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:32:36,693 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:33:38,710 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:33:38,710 - audit_logger - INFO - Certificate end date : 2019-03-26
+2016-03-21 15:33:38,710 - audit_logger - ERROR - Validity period exceeds 3 years
+2016-03-21 15:33:38,711 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:33:38,711 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:33:38,711 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:33:38,711 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:33:38,711 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:33:38,711 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:33:38,713 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:33:38,713 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:33:38,713 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:33:38,713 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:33:38,713 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:33:38,713 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:33:38,713 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:33:38,713 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:33:38,713 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:33:38,714 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:33:38,714 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:33:38,714 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:33:38,714 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:33:38,714 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:33:38,714 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:33:38,714 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:33:38,714 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:33:38,716 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:33:38,716 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:33:38,716 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:33:38,716 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:16,835 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:34:16,835 - audit_logger - INFO - Certificate end date : 2019-03-26
+2016-03-21 15:34:16,835 - audit_logger - ERROR - Validity period exceeds 3 years
+2016-03-21 15:34:16,836 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:16,836 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:16,836 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:16,836 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:16,836 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:34:16,836 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:34:16,838 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:34:16,838 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:34:16,838 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:34:16,838 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:34:16,838 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:34:16,838 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:34:16,838 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:16,838 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:16,838 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:16,839 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:16,839 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:16,839 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:16,839 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:16,839 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:16,839 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:16,839 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:16,839 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:16,841 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:16,841 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:16,841 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:16,841 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:34,220 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:34:34,221 - audit_logger - INFO - Certificate end date : 2019-03-26
+2016-03-21 15:34:34,221 - audit_logger - ERROR - Validity period exceeds 3 years
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:34,223 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:34:34,223 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:34,223 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:34:34,226 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:36:44,663 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:36:44,664 - audit_logger - INFO - Certificate end date : 2019-03-26
+2016-03-21 15:36:44,664 - audit_logger - ERROR - Validity period exceeds 3 years
+2016-03-21 15:36:44,664 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:36:44,664 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:36:44,664 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:36:44,664 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:36:44,664 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:36:44,664 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 15:36:44,665 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:36:44,665 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:36:44,665 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 15:36:44,665 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:36:44,665 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:36:44,665 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:36:44,667 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 15:36:44,668 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:36:44,668 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:36:44,668 - audit_logger - INFO - Certificate is valid
+2016-03-21 15:36:44,668 - audit_logger - INFO - Certificate is valid
+2016-03-21 16:20:09,502 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 16:20:09,503 - audit_logger - INFO - Certificate end date : 2019-03-26
+2016-03-21 16:20:09,503 - audit_logger - ERROR - Validity period exceeds 3 years
+2016-03-21 16:20:09,506 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 16:20:09,506 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 16:20:09,506 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 16:20:09,506 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 16:20:09,506 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 16:20:09,506 - audit_logger - INFO - Validity period does not exceed 3 years
+2016-03-21 16:20:09,509 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 16:20:09,509 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 16:20:09,509 - audit_logger - INFO - Certificate start date : 2016-03-21
+2016-03-21 16:20:09,509 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 16:20:09,509 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 16:20:09,509 - audit_logger - INFO - Certificate end date : 2016-03-22
+2016-03-21 16:20:09,509 - audit_logger - INFO - Certificate is valid
+2016-03-21 16:20:09,509 - audit_logger - INFO - Certificate is valid
+2016-03-21 16:20:09,509 - audit_logger - INFO - Certificate is valid
+2016-03-21 16:20:09,513 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 16:20:09,513 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 16:20:09,513 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 16:20:09,513 - audit_logger - INFO - Certificate start date : 2015-06-12
+2016-03-21 16:20:09,513 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 16:20:09,513 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 16:20:09,513 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 16:20:09,513 - audit_logger - INFO - Certificate end date : 2017-06-12
+2016-03-21 16:20:09,515 - audit_logger - INFO - Certificate is valid
+2016-03-21 16:20:09,515 - audit_logger - INFO - Certificate is valid
+2016-03-21 16:20:09,515 - audit_logger - INFO - Certificate is valid
+2016-03-21 16:20:09,515 - audit_logger - INFO - Certificate is valid

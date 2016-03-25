@@ -116,24 +116,27 @@ class CertRules(object):
 			trust_store_obj = TrustStore(cert)
 			is_cert = trust_store_obj.get_issuer(self.config_obj.trust_store_path+"\*.*")#self.config_obj.trust_store_path
 
-			if str(is_cert.get_issuer()) == str(is_cert.get_subject()): 
-				break
-			else:
-				cert_url = self.revocation_obj.get_ocsp_url(cert)		
-			
-				if is_cert == False:
-					return False
-				else:				
-					is_cert_url = self.revocation_obj.get_ocsp_url(is_cert)
-
-					if is_cert_url == False:
+			if is_cert:
+				if str(is_cert.get_issuer()) == str(is_cert.get_subject()): 
+					break
+				else:
+					cert_url = self.revocation_obj.get_ocsp_url(cert)		
+				
+					if is_cert == False:
 						return False
-					else:
-						res = self.revocation_obj.get_ocsp_status(cert,is_cert,cert_url,is_cert_url)
-						if res == True:
-							cert = is_cert
-						else:
+					else:				
+						is_cert_url = self.revocation_obj.get_ocsp_url(is_cert)
+	
+						if is_cert_url == False:
 							return False
-
-			return True
+						else:
+							res = self.revocation_obj.get_ocsp_status(cert,is_cert,cert_url,is_cert_url)
+							if res == True:
+								cert = is_cert
+							else:
+								return False
+			else:
+				return False
+							
+		return True
 		

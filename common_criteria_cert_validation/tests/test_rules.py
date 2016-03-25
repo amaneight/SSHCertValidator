@@ -7,7 +7,7 @@ import OpenSSL
 
 class TestRules(unittest.TestCase):
     
-    global cert, msg
+    global cert, rules, msg
     
     msg = '#### TEST FAILED !'
     
@@ -15,17 +15,21 @@ class TestRules(unittest.TestCase):
     certfile = open(certpath, 'r').read()
     cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile)
     
+    rules = CertRules(cert)
+    
+    
     def test_check_validity_true(self):
-        rules = CertRules(cert)
         self.assertTrue(rules.check_validity(), msg)
         
     def test_check_ocsp_true(self):     
-        rules = CertRules(cert)
         self.assertTrue(rules.check_ocsp(), msg)
     
     def test_check_ext_key_usage_true(self):
-        rules = CertRules(cert)
         self.assertTrue(rules.check_ext_key_usage(), msg)
+        
+    def test_check_crl_true(self):
+        self.assertTrue(rules.check_crl(), msg)
+        
         
 if __name__ == "__main__":
     unittest.main()

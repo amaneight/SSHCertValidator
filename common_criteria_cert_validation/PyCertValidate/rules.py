@@ -29,7 +29,7 @@ class CertRules(object):
 		self.usage_obj = Usage()
 		self.pubkey_obj = PublicKey(cert)
 		self.ext_dict = get_extension(cert)
-		self.config_obj.trust_store_path = "E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation\\PyCertValidate\\truststore\\*.cer"
+		#self.config_obj.trust_store_path = "E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation\\PyCertValidate\\truststore\\*.cer"
 		
 
 	def check_validity(self):
@@ -85,7 +85,6 @@ class CertRules(object):
 			trust_store_obj = TrustStore(cert)
 			is_cert = trust_store_obj.get_issuer(self.config_obj.trust_store_path)
 
-
 			if str(is_cert.get_issuer()) == str(is_cert.get_subject()): 
 				break
 			else:
@@ -130,3 +129,4 @@ class CertRules(object):
 							return False
 
 			return True
+		

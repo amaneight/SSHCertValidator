@@ -50,7 +50,7 @@ if __name__ == '__main__': # pragma: no cover
 	c = OpenSSL.crypto
 
 
-	st_cert = open("fb.cer", 'rt').read()  # Read certificate
+	st_cert = open("Citi.cer", 'rt').read()  # Read certificate
 	cert = c.load_certificate(c.FILETYPE_PEM, st_cert)
 
 	cert_obj = ValidateCert()	

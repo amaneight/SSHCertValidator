@@ -602,3 +602,15 @@
 2016-03-23 13:39:03,457 - debug_logger - INFO - check_keysize - Checking key with type : 408 & size : 256
 2016-03-23 13:39:03,457 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key type : ECDSA
 2016-03-23 13:39:03,457 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key size : 256
+2016-03-25 11:09:16,757 - debug_logger - INFO - check_keysize - Checking key with type : 408 & size : 256
+2016-03-25 11:09:16,757 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key type : ECC
+2016-03-25 11:09:16,757 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key size : 256
+2016-03-25 11:09:57,461 - debug_logger - INFO - check_keysize - Checking key with type : 6 & size : 2048
+2016-03-25 11:09:57,461 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key type : RSA
+2016-03-25 11:09:57,461 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key size : 2048
+2016-03-25 11:12:11,071 - debug_logger - INFO - check_keysize - Checking key with type : 6 & size : 2048
+2016-03-25 11:12:11,071 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key type : RSA
+2016-03-25 11:12:11,071 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key size : 2048
+2016-03-25 11:13:11,572 - debug_logger - INFO - check_keysize - Checking key with type : 6 & size : 2048
+2016-03-25 11:13:11,572 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key type : RSA
+2016-03-25 11:13:11,572 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key size : 2048

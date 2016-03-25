@@ -7,7 +7,7 @@ class GetCertConfig(object):
 
   def __init__(self):    
 
-    protopath = "E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation\\PyCertValidate\\a.txt"
+    protopath = "Proto.txt"
     f = open(protopath, "rb")
     config = CertValidate_pb2.Certificate_Cfg()
     config.ParseFromString(f.read())

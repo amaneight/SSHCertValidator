@@ -1,6 +1,6 @@
 import unittest
 import sys
-sys.path.append("E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation")
+
 
 from PyCertValidate import util
 import OpenSSL 
@@ -10,7 +10,7 @@ class TestUtil(unittest.TestCase):
     global msg, main_list, certpath, cert
     main_list = [1, 2, 3, 4, 5]
     msg = '#### TEST FAILED !'
-    certpath = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/citi.pem'
+    certpath = 'Citi.pem'
     certfile = open(certpath, 'r').read()
     cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile)
     

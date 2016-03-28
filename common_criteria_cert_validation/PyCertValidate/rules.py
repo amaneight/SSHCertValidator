@@ -54,13 +54,12 @@ class CertRules(object):
 		return self.pubkey_obj.check_keysize(self.config_obj.pub_key_list)
 
 	def check_key_usage(self):
-		return True
-		# req_usage_list = []
-		# key_list = self.config_obj.key_list
-		# for index in len(key_list):
-		# 	req_usage_list.append(key_list[index][0])
+		req_usage_list = []
+		key_list = self.config_obj.key_list
+		for index in key_list:
+			req_usage_list.append(index[0])
 
-		# return self.usage_obj.key_usage_check(self.cert,self.ext_dict['keyUsage'],req_usage_list)
+		return self.usage_obj.key_usage_chk(self.cert,self.ext_dict['keyUsage'],req_usage_list)
 
 	def check_ext_key_usage(self):
 		req_extusage_list = []

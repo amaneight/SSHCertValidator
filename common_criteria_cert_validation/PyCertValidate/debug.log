@@ -638,3 +638,12 @@
 2016-03-28 12:31:32,111 - debug_logger - INFO - check_keysize - Checking key with type : 6 & size : 2048
 2016-03-28 12:31:32,111 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key type : RSA
 2016-03-28 12:31:32,111 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key size : 2048
+2016-03-28 12:49:22,190 - debug_logger - INFO - check_keysize - Checking key with type : 6 & size : 2048
+2016-03-28 12:49:22,190 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key type : RSA
+2016-03-28 12:49:22,190 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key size : 2048
+2016-03-28 12:50:05,289 - debug_logger - INFO - check_keysize - Checking key with type : 6 & size : 2048
+2016-03-28 12:50:05,289 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key type : RSA
+2016-03-28 12:50:05,289 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key size : 2048
+2016-03-28 13:55:24,670 - debug_logger - INFO - check_keysize - Checking key with type : 6 & size : 2048
+2016-03-28 13:55:24,670 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key type : RSA
+2016-03-28 13:55:24,670 - debug_logger - INFO - check_keysize - Certificate key belongs to a supported key size : 2048

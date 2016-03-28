@@ -9,14 +9,7 @@ key_usage = KeyUsage()
 
 class Usage(object):
 
-    def key_usage_chk(self,cert,extension):
-
-        # for index in range(cert.get_extension_count()):
-
-        #     extension = cert.get_extension(index)
-        #     ext_name = extension.get_short_name()
-           
-        #     if ext_name == 'keyUsage':
+    def key_usage_chk(self,cert,extension,req_extension):
         ext_data = extension.get_data()
         decoder_data = der_decoder.decode(ext_data, asn1Spec = key_usage)
         key_usage_list = []
@@ -24,10 +17,18 @@ class Usage(object):
         for name in decoder_data:
             for index in range(len(name)):
                 if name[index] == 1:
-                    key_usage_list.append(name.namedValues[index][0])
-                    
-        return key_usage_list
+                    """
+                        name.namedValues[index][0] = 0
+                        name.namedValues[index][1] = digitalSignature
+                    """
+                    #key_usage_list.append(name.namedValues[index][0])
+                    key_usage_list.append(name.namedValues[index][1])
+        
 
+        if len(set(key_usage_list) & set(req_extension)) > 0:
+            return True
+        else:
+            return False
 
     def extkey_usage_chk(self,cert,extension,req_extension):
 

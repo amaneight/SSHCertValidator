@@ -6,7 +6,7 @@
 
 import unittest
 import os
-from GetProto import GetProto
+from PyCertValidate.GetProto import GetProto
 from cert_proto_get import GetCertConfig
 import texttable as tt
 

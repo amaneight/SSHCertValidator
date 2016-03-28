@@ -1,6 +1,11 @@
 import unittest
+
+import os
+this_dir_path = os.path.dirname(os.path.abspath(__file__))
+path_to_append = os.path.abspath(os.path.join(this_dir_path, ".."))
 import sys
-sys.path.append("E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation")
+sys.path.append(path_to_append)
+
 from PyCertValidate.PublicKey import *
 import OpenSSL
 
@@ -8,8 +13,8 @@ class TestPublicKey(unittest.TestCase):
     
     global cert, cert_1024, keysizes_with_1024, keysizes, msg
     msg = '#### TEST FAILED !'
-    certpath = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/citi.pem'
-    certpath_1024 = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/self_signed_1024.pem'
+    certpath = path_to_append + '/certificates/citi.pem'
+    certpath_1024 = path_to_append + '/certificates/self_signed_1024.pem'
     
     certfile = open(certpath, 'r').read()
     cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile)

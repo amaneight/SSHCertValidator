@@ -1,10 +1,19 @@
 import unittest
 
-import CertValidate_pb2
+import os
+this_dir_path = os.path.dirname(os.path.abspath(__file__))
+print "THIS : " + this_dir_path
+path_to_append = os.path.abspath(os.path.join(this_dir_path, ".."))
+print "APPEND : " + path_to_append
+import sys
+#sys.path.append("E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation")
+sys.path.append(path_to_append)
+
+import PyCertValidate.CertValidate_pb2
 import sys
 import ConfigParser
 import json
-from cert_proto_get import GetCertConfig
+from PyCertValidate.cert_proto_get import GetCertConfig
 import texttable as tt
 from PyCertValidate.Proto import *
 

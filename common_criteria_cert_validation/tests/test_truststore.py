@@ -28,13 +28,13 @@ class TestTrustStore(unittest.TestCase):
         
         self.msg = '#### TEST FAILED !'
     
-        self.truststore_path = "E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation\\PyCertValidate\\truststore\\*.cer"
-     
-        certpath_trusted = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/citi.pem'
+        self.truststore_path = truststore_path = path_to_append + '\\PyCertValidate\\truststore\\*.*'
+        path_to_append + '/certificates/citi.pem' 
+        certpath_trusted = path_to_append + '\\certificates\\citi.pem' 
         certfile_trusted = open(certpath_trusted, 'r').read()
         self.cert_trusted = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile_trusted)
         
-        certpath_untrusted = 'E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation/certificates/self_signed_1024.pem'
+        certpath_untrusted = path_to_append + '\\certificates\\self_signed_1024.pem'
         certfile_untrusted = open(certpath_untrusted, 'r').read()
         self.cert_untrusted = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile_untrusted)
     

@@ -54,7 +54,7 @@ class TestUsage(unittest.TestCase):
             
         usage = Usage()
 
-        self.assertTrue(usage.key_usage_chk(cert,extension_dict['keyUsage'],other_KUs),msg)    
+        self.assertFalse(usage.key_usage_chk(cert,extension_dict['keyUsage'],other_KUs),msg)    
 
       
     

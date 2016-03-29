@@ -5,117 +5,99 @@
 #! /usr/bin/python
 
 from cert_proto_get import GetCertConfig
-import texttable as tt
+
 
 class GetProto(object):
     
-      def table_config(self,header_list):
-            tab = tt.Texttable()
-            
-            header = []
-            for title in header_list:
-              header.append(title)
-            tab.header(header)
+    def lformat(self, element):
+        return "{:20}".format(element)
+    
+    def rformat(self, element):
+        return "{:>20}".format(element)
+    
+    def cformat(self, element):
+        return "{:^20}".format(element)
+    
+    def draw(self, char, spaces):
+        l = ["{:"]
+        l.append(char)
+        l.append("<")
+        l.append(str(spaces))
+        l.append("}")
 
-            cols = []
-            for index in range(len(header_list)):
-              cols.append("20")
-            tab.set_cols_width(cols)
-
-            align = ["l"]
-            for index in range(len(header_list)-1):
-              align.append("r")
-            tab.set_cols_align(align)    
-            
-            valign = ["l"]
-            for index in range(len(header_list)-1):
-              valign.append("r")
-            tab.set_cols_valign(valign)
-
-            tab.set_deco(tab.HEADER | tab.VLINES)
-            tab.set_chars(['-','|','+','-'])
-
-            return tab
+        return "".join(l).format("")
 
 
-      def get_proto(self):
-              
-            config_obj = GetCertConfig()
-            table_content = []
+    def get_proto(self):
+        config_obj = GetCertConfig()
+        table_content = []
 
-            table_content.append("CHECKS\n\n")
+        "Check"
+        table_content.append( "\n Check \n")
+        
+        table_content.append(self.draw('-',40))
+        table_content.append( "%s|%s" %(self.cformat("Check Name"),self.cformat("Type")))
+        table_content.append( self.draw('-',40))
+        
 
-            header = ['Check Name', 'Type']
-            tab = self.table_config(header)
-
-            for element in config_obj.cert_check_list:
-                tab.add_row([element[0], element[1]])                
+        for element in config_obj.cert_check_list:
+            table_content.append( "%s|%s" %(self.lformat(element[0]),self.rformat(element[1])))
                 
-            table_content.append(tab.draw())
-                    
-            "Key Usage"
-            table_content.append("\n\nKEY USAGE\n\n")
-            header = ['Key ID', 'Key Name']
-            tab = self.table_config(header)
+        "Key Usage"
+        table_content.append( "\n Key Usage \n")
+        table_content.append( self.draw('-',40))
+        table_content.append( "%s|%s" %(self.cformat("Key ID"),self.cformat("Key Name")))
+        table_content.append( self.draw('-',40))
 
-            for element in config_obj.key_list:
-                tab.add_row([element[0], element[1]])
-                
-            table_content.append(tab.draw())
+        for element in config_obj.key_list:
+            table_content.append( "%s|%s" %(self.cformat(element[0]),self.rformat(element[1])))
             
-            "Extended Key Usage"
-            table_content.append("\n\nEXT KEY USAGE\n\n")
-            header = ['Dotted String', 'Usage Name', 'Display Name']
-            tab = self.table_config(header)
-            for element in config_obj.ext_key_list:
-              tab.add_row([element[0], element[1], element[2]])
 
-            table_content.append(tab.draw())
+        "Extended Key Usage"
+        table_content.append( "\n Extended Key Usage \n")
+        
+        table_content.append( self.draw('-',60))
+        table_content.append( "%s|%s|%s" %(self.cformat("Dotted String"),self.cformat("Usage Name"),self.cformat("Display Name")))
+        table_content.append( self.draw('-',60))
+        for element in config_obj.ext_key_list:
+            table_content.append( "%s|%s|%s" %(self.cformat(element[0]),self.lformat(element[1]),self.rformat(element[2])))
 
-            "Public Key"
-            table_content.append("\n\nPUBLIC KEY\n\n")
-            header = ['Algo Code', 'Algo Name', 'Required bits']
-            tab = self.table_config(header)
+        "Public Key"
+        table_content.append( "\n Public Key \n")
+        table_content.append( self.draw('-',60))
+        table_content.append( "%s|%s|%s" %(self.cformat("Algo Code"),self.cformat("Algo Name"),self.cformat("Required bits")))
+        table_content.append( self.draw('-',60))
+        for element in config_obj.pub_key_list:
+            table_content.append( "%s|%s|%s" %(self.cformat(element[0]),self.lformat(element[1]),self.rformat(element[2])))
             
-            for element in config_obj.pub_key_list:
-              tab.add_row([element[0], element[1], element[2]])
-              
-            table_content.append(tab.draw())
+        "Signing Algo"
+        table_content.append( "\n Signing Algo \n")
+        table_content.append( self.draw('-',20))
+        table_content.append( "%s" %(self.cformat("Algo Name")))
+        table_content.append( self.draw('-',20))
+        for element in config_obj.algo_name_list:
+            table_content.append( "%s" %(self.cformat(element)))
             
-            "Signing Algo"
-            table_content.append("\n\nSIGNING ALGO\n\n")
-            header = ['Algo Name']
-            tab = self.table_config(header)
-            
-            for element in config_obj.algo_name_list:
-              tab.add_row([element])
-            table_content.append(tab.draw())
+        "Validity"
+        table_content.append( "\n Validity \n")
+        table_content.append( self.draw('-',20))
+        table_content.append( "%s" %(self.cformat("Certificate Age")))
+        table_content.append( self.draw('-',20))
+        table_content.append( "%s" %(self.cformat(config_obj.cert_age)))
+        
+        "Trust Store Path"
+        table_content.append( "\n Trust Store Path \n")
+        table_content.append( self.draw('-',20))
+        table_content.append( "%s" %(self.cformat("Path")))
+        table_content.append( self.draw('-',20))
+        table_content.append( "%s" %(self.cformat(config_obj.trust_store_path)))
 
-            "Validity"
-            table_content.append("\n\nVALIDITY\n\n")
-            header = ['Age']
-            tab = self.table_config(header)
-            tab.add_row([config_obj.cert_age])
-            table_content.append(tab.draw())
+        "Revocation"
+        table_content.append( "\n Revocation Mechanism \n")
+        table_content.append( self.draw('-',40))
+        table_content.append( "%s|%s" %(self.cformat("Preferred Mechanism"),self.cformat("Fail Status")))
+        table_content.append( self.draw('-',40))
+        table_content.append( "%s|%s" %(self.cformat(config_obj.preferred_mechanism),self.cformat(config_obj.fail_status)))
 
-            "Trust store path"
-            table_content.append("\n\nPATH\n\n")
-            header = ['Path']
-            tab = self.table_config(header)
-            tab.add_row([config_obj.trust_store_path])
-            table_content.append(tab.draw())
-
-            "Proto object path"
-            table_content.append("\n\nREVOCATION\n\n")
-            header = ['Mechanism', 'Fail Satatus']
-            tab = self.table_config(header)
-
-            tab.add_row([config_obj.preferred_mechanism, config_obj.fail_status])
-            table_content.append(tab.draw())
-            print ''.join(table_content)
-
-
-            with open("Table.txt","wb") as f:
-              f.write(''.join(table_content))
-
-            return True   
+        with open("Tablenew.txt","wb") as f:
+            f.write("\n".join(table_content))

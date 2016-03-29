@@ -1,0 +1,68 @@
+
+ Check 
+
+----------------------------------------
+     Check Name     |        Type        
+----------------------------------------
+check_validity      |           MANDATORY
+check_period        |           MANDATORY
+check_issuer        |           MANDATORY
+check_subject       |           MANDATORY
+check_keysize       |           MANDATORY
+check_key_usage     |           MANDATORY
+check_ext_key_usage |           MANDATORY
+check_revocation    |           MANDATORY
+
+ Key Usage 
+
+----------------------------------------
+       Key ID       |      Key Name      
+----------------------------------------
+         0          |    digitalSignature
+         1          |       nonRepudation
+         2          |     keyEncipherment
+
+ Extended Key Usage 
+
+------------------------------------------------------------
+   Dotted String    |     Usage Name     |    Display Name    
+------------------------------------------------------------
+ 1.3.6.1.5.5.7.3.1  |serverAuth          |Server Authentication
+ 1.6.3.1.5.5.7.3.2  |clientAuth          |Client Authentication
+
+ Public Key 
+
+------------------------------------------------------------
+     Algo Code      |     Algo Name      |   Required bits    
+------------------------------------------------------------
+         6          |RSA                 |                2048
+        408         |ECC                 |                 256
+
+ Signing Algo 
+
+--------------------
+     Algo Name      
+--------------------
+        sha1        
+        md5         
+
+ Validity 
+
+--------------------
+  Certificate Age   
+--------------------
+         5          
+
+ Trust Store Path 
+
+--------------------
+        Path        
+--------------------
+D:\PyCertValidate\Final Implementation\PyCertValidate\trust_store
+
+ Revocation Mechanism 
+
+----------------------------------------
+Preferred Mechanism |    Fail Status     
+----------------------------------------
+        CRL         |         1          

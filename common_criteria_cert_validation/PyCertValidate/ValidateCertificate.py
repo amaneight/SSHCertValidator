@@ -9,10 +9,6 @@ import OpenSSL
 import requests
 #import certmessage_pb2
 
-
-#from Crypto import *
-#from Crypto.Util import asn1
-
 from datetime import date
 from dateutil.relativedelta import relativedelta
 
@@ -60,55 +56,31 @@ if __name__ == '__main__': # pragma: no cover
 	rules_dict = cert_obj.classify_rules()	
 
 	print "--- Executing mandatory checks ---"
-
+	fail_count = 0
+	
 	for rule in rules_dict['MANDATORY']:
 		methodName = getattr(rule_obj, rule)
+		
 		status = methodName()
+		
+		if status == False:
+			fail_count += 1
+		
 		print "-------------------------------------------"
 		print " MethodName %s > Result %s" %(rule,status)
 		print "-------------------------------------------"
-		#print status
+		
+	if fail_count == 0:
 
-	# for rule in rules_dict['MANDATORY']:
-
-	# 	func_name = "rule_obj."+rule +"()"
-	# 	res = eval(func_name) 
-	# 	if res == True:
-	# 		print 'Success'
-	# 	else:
-	# 		print 'Failure'
-
-
-    #exec("print '%s' has  characters % (abc(2,3))", {"__builtins__" : None}, safe_dict)
-	#cert_store = certmessage_pb2.CertStore()
-
-	#f = open("a.txt",'rb')
-	#cert_store.ParseFromString(f.read())
-	#f.close()
-
-	#st_cert = ListCert(cert_store)
-
-	#print type(st_cert)
-
-	  # Load certificate                                  
-	# print cert.get_subject()
-	# print "--------------------------------------------------------------------"
-	# print "Validity status >> %s" % (Validity(cert))
-	# print "--------------------------------------------------------------------"
-	# print "Is Key size greater than 2048 bits >> %r" % (KeySize(cert))
-	# print "--------------------------------------------------------------------"
-	# # print "Revocation Status >> %s" %(RevocationStatus(cert))
-	# print "--------------------------------------------------------------------"
-	# print "Signing algorithm >> %s" % (SigningAlgo(cert))
-	# print "--------------------------------------------------------------------"
-	# print "Issuer >> %s" % (Issuer(cert, 'TrustStore/*.cer'))
-	# print "--------------------------------------------------------------------"
-	# print "Subject >> %s" % (Subject(cert))
-	# print "--------------------------------------------------------------------"
-	# print "Key Usage >> %s" % (Usage(cert))
-	# print "--------------------------------------------------------------------"
-	# print "Extended Key Usage >> %s" % (ExtendedKeyUsage(cert))
-	# print "--------------------------------------------------------------------"
-
-#Get attr
-#Multiple cert in a cert file
+		print "Mandatory checks passed"
+		print "--- Executing optional checks ---"
+		for rule in rules_dict['OPTIONAL']:
+			methodName = getattr(rule_obj, rule)
+			
+			status = methodName()
+			
+			print "-------------------------------------------"
+			print " MethodName %s > Result %s" %(rule,status)
+			print "-------------------------------------------"
+	else:
+		print "Mandatory checks failed"

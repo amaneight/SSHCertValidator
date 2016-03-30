@@ -15,20 +15,26 @@ sys.path.append(path_to_append)
 
 from PyCertValidate.GetProto import GetProto
 from PyCertValidate.cert_proto_get import GetCertConfig
-import texttable as tt
+
 
 class TestProto(unittest.TestCase):
     
-    global cert_config, gp, msg
+    global cert_config, gp, msg, txt
     
     msg = "#### TEST FAILED !"
-    
+    txt = "XORIANT BANER"
 
     cert_config = GetCertConfig()
     gp = GetProto()
     
     def test_proto_true(self):
-        self.assertIsInstance(gp.table_config(['header']) , tt.Texttable, msg)
+        self.assertEqual(gp.lformat(txt),'XORIANT BANER       ', msg)
+        self.assertEqual(gp.rformat(txt),'       XORIANT BANER', msg)
+        self.assertEqual(gp.cformat(txt),'   XORIANT BANER    ', msg)
+        self.assertEqual(gp.draw('.',10),'..........', msg)
+        self.assertTrue(gp.get_proto(), msg)
+        
+        
         self.assertTrue(gp.get_proto())
 
 if __name__ == "__main__":

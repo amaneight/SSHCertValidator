@@ -101,3 +101,5 @@ class GetProto(object):
 
         with open("Tablenew.txt","wb") as f:
             f.write("\n".join(table_content))
+            
+        return True

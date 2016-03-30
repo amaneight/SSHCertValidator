@@ -5,7 +5,6 @@
      Check Name     |        Type        
 ----------------------------------------
 check_validity      |           MANDATORY
-check_period        |           MANDATORY
 check_issuer        |           MANDATORY
 check_subject       |           MANDATORY
 check_keysize       |           MANDATORY

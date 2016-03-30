@@ -31,9 +31,7 @@ class TestRules(unittest.TestCase):
     
     def test_check_validity_true(self):
         self.assertTrue(rules.check_validity(), msg)
-    
-    def test_check_period_true(self):
-        self.assertTrue(rules.check_period(), msg)
+
 
     def test_check_issuer_true(self):
         self.assertTrue(rules.check_issuer(), msg)

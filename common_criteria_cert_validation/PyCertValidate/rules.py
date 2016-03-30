@@ -33,10 +33,15 @@ class CertRules(object):
 		
 
 	def check_validity(self):
-		return self.valid_obj.check_validity()
+		
+		validity_chk = self.valid_obj.check_validity()		
+		period_chk = self.valid_obj.check_period(self.config_obj.cert_age)
+		
+		if validity_chk == False or period_chk == False:
+			return False
+		
+		return True
 
-	def check_period(self):
-		return self.valid_obj.check_period(self.config_obj.cert_age)
 
 	def check_issuer(self):
 		print self.config_obj.trust_store_path

@@ -1,5 +1,4 @@
 import unittest
-import OpenSSL
 
 import os
 this_dir_path = os.path.dirname(os.path.abspath(__file__))
@@ -7,45 +6,61 @@ path_to_append = os.path.abspath(os.path.join(this_dir_path, ".."))
 import sys
 sys.path.append(path_to_append)
 
+from PyCertValidate.Revocation import *
 from PyCertValidate.TrustStore import *
+import OpenSSL
 
+class TestRevocation(unittest.TestCase):
+    
+    global cert, cert_revoked, cert_issuer, cert_revoked_issuer, revocation, msg, cert_url, cert_issuer_url,cert_revoked , cert_revoked_url, cert_revoked_issuer_url
+    
+    msg = '#### TEST FAILED !'
+    revocation = Revocation()
+    
+    truststore_path = path_to_append + '\\PyCertValidate\\truststore\\*.*'
+    
+    certpath = path_to_append + '/certificates/citi.pem'    
+    certfile = open(certpath, 'r').read()
+    cert = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile)
+    
+    certpath_revoked = path_to_append + '/certificates/self_signed_1024.pem'    
+    certfile_revoked = open(certpath_revoked, 'r').read()
+    cert_revoked = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile_revoked)
+    
+    
+    
+    truststore = TrustStore(cert)
+    cert_issuer = truststore.get_issuer(truststore_path)
 
-class TestTrustStore(unittest.TestCase):
+   
+    truststore = TrustStore(cert_revoked)
+    cert_revoked_issuer = truststore.get_issuer(truststore_path)
+
+    cert_url = revocation.get_ocsp_url(cert)
+    cert_issuer_url = revocation.get_ocsp_url(cert_issuer)
+    cert_revoked_url = revocation.get_ocsp_url(cert_revoked)
+    #cert_revoked_issuer_url = revocation.get_ocsp_url(cert_revoked_issuer)
     
-    global truststore_path, cert_trusted, cert_untrusted, msg
-    
-    def setUp(self):
-        import os
-        this_dir_path = os.path.dirname(os.path.abspath(__file__))
-        print "THIS : " + this_dir_path
-        path_to_append = os.path.abspath(os.path.join(this_dir_path, ".."))
-        print "APPEND : " + path_to_append
-        import sys
-        #sys.path.append("E:\\DEV_ENV\\Source\\Git\\git_implementation_repo\\common_criteria_cert_validation")
-        sys.path.append(path_to_append)
-        #print sys.path
-        from PyCertValidate.TrustStore import *
+    def test_crl_check_true(self):
+        self.assertTrue(revocation.crl_check(cert, cert_issuer), msg)
         
-        self.msg = '#### TEST FAILED !'
-    
-        self.truststore_path = truststore_path = path_to_append + '\\PyCertValidate\\truststore\\*.*'
-        path_to_append + '/certificates/citi.pem' 
-        certpath_trusted = path_to_append + '\\certificates\\citi.pem' 
-        certfile_trusted = open(certpath_trusted, 'r').read()
-        self.cert_trusted = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile_trusted)
+    def test_crl_check_false(self):
+        self.assertFalse(revocation.crl_check(cert_revoked, cert_revoked_issuer), msg)
         
-        certpath_untrusted = path_to_append + '\\certificates\\self_signed_1024.pem'
-        certfile_untrusted = open(certpath_untrusted, 'r').read()
-        self.cert_untrusted = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile_untrusted)
-    
-    
-    def test_get_issuer_true(self):
-        truststore = TrustStore(self.cert_trusted)
-        self.assertIsNotNone(truststore.get_issuer(self.truststore_path), self.msg)
-    
-    def test_get_issuer_false(self):
-        truststore = TrustStore(self.cert_untrusted)
-        self.assertFalse(truststore.get_issuer(self.truststore_path), self.msg)
+    def test_get_ocsp_status_true(self):
         
+        self.assertTrue(revocation.get_ocsp_status(cert,cert_issuer,cert_url,cert_issuer_url), msg)
+    
+    def test_get_ocsp_status_false(self):
+        self.assertTrue(revocation.get_ocsp_status(cert,cert_issuer,cert_url,cert_issuer_url), msg)
+        #self.assertTrue(revocation.get_ocsp_status(cert_revoked,cert_revoked,cert_revoked_url,cert_revoked_url), msg)
+    
+    def test_get_ocsp_url_true(self):
+        self.assertIsInstance(revocation.get_ocsp_url(cert), str, msg)    
+    
+    def test_get_ocsp_url_false(self):
+        self.assertFalse(revocation.get_ocsp_url(cert_revoked), msg)    
+        
+
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main()        

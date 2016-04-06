@@ -90,17 +90,22 @@ class Proto(object):
     return True
 
   def set_proto(self):
-    cfg_item = self.config.items
-    check_path = cfg_item("Path")
-    file_name = check_path[1][1].strip('"')
-
-    cert_config = CertValidate_pb2.Certificate_Cfg()
-    self.cfg_to_proto(cert_config)
-
-    f = open(file_name, "wb")
-    f.write(cert_config.SerializeToString())
-    print "\nCertificate validation constraints written into file %s " %(file_name)
-    f.close()
-    return True
+    try:
+        cfg_item = self.config.items
+        check_path = cfg_item("Path")
+        file_name = check_path[1][1].strip('"')
+    
+        cert_config = CertValidate_pb2.Certificate_Cfg()
+        self.cfg_to_proto(cert_config)
+    
+        f = open(file_name, "wb")
+        f.write(cert_config.SerializeToString())
+        print "\nCertificate validation constraints written into file %s " %(file_name)
+        f.close()
+        return True
+    except Exception as e:
+        print "Error setting config. " + e.message
+    
+    return False
 
  

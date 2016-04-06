@@ -18,6 +18,9 @@ class Revocation(object):
     def get_ocsp_url(self,cert):
         
         crl_dist_points = CRLDistPointsSyntax()
+        
+        if not isinstance(cert, OpenSSL.crypto.X509):
+            return False
 
         for index in range(cert.get_extension_count()):
             
@@ -50,6 +53,10 @@ class Revocation(object):
         t0 = time.clock()
         #print "Issuer Certificate is >> %s" %(is_cert_name)
         c = OpenSSL.crypto
+        
+        if not isinstance(cert, c.X509) or not isinstance(is_cert, c.X509):
+            return False
+        
         id_cert_buf = c.dump_certificate(c.FILETYPE_PEM, cert)
         issuer_cert_buf = c.dump_certificate(c.FILETYPE_PEM, is_cert)
         # with open(cert_name,"rb") as f:

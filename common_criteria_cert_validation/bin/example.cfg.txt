@@ -30,5 +30,5 @@ preffered_mechanism = [CRL]
 fail_status = true
 
 [Path]
-trut_store = "D:\PyCertValidate\TrustStore"
+trust_store = "D:\PyCertValidate\TrustStore"
 proto_obj = "D:\PyCertValidate\Final Implementation\PyCertValidate\proto.txt"

@@ -2,6 +2,7 @@ import unittest
 import OpenSSL
 
 import os
+from common_criteria_cert_validation.PyCertValidate.cert_proto_get import GetCertConfig
 this_dir_path = os.path.dirname(os.path.abspath(__file__))
 path_to_append = os.path.abspath(os.path.join(this_dir_path, ".."))
 import sys
@@ -20,6 +21,8 @@ class TestCertProtoSet(unittest.TestCase):
         self.assertTrue(update_default_config(), msg)
     
     def test_update_config_true(self):
+        c = GetCertConfig()
+        c.config 
         config = CertValidate_pb2.Certificate_Cfg()        
         config.cert_age = 5
         config.trust_store_path = "test_truststore"

@@ -7,7 +7,7 @@ path_to_append = os.path.abspath(os.path.join(this_dir_path, ".."))
 import sys
 sys.path.append(path_to_append)
 
-
+import PyCertValidate.CertValidate_pb2
 import sys
 import ConfigParser
 import json
@@ -22,9 +22,9 @@ class TestProto(unittest.TestCase):
     global proto, path, msg,config, cert_config,keyusage_extension, ext_keyusage_extension, required_EKUs, other_EKUs
     
     msg = "#### TEST FAILED !"
-    path = 'D:\PyCertValidate\Final Implementation\PyCertValidate\example.cfg'
-    proto = Proto(path)
     
+
+    path = path_to_append + '/PyCertValidate/example.cfg'
     config = ConfigParser.RawConfigParser()    
     config.read(path)
 
@@ -32,7 +32,7 @@ class TestProto(unittest.TestCase):
     
     
     def test_proto_true(self):
-        
+        proto = Proto(path)
         self.assertIsInstance(proto.read_cfg(), list, msg)
         self.assertTrue(proto.set_proto(),msg)
         

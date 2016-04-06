@@ -27,7 +27,13 @@ class TestRevocation(unittest.TestCase):
     certfile_revoked = open(certpath_revoked, 'r').read()
     cert_revoked = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, certfile_revoked)
     
+<<<<<<< Upstream, based on origin/cc_implementation_asterix
     
+=======
+    truststore_path = path_to_append + '/PyCertValidate/truststore/*.cer'
+    
+    revocation = Revocation()
+>>>>>>> 2870ef5 More corrections to test cases.
     
     truststore = TrustStore(cert)
     cert_issuer = truststore.get_issuer(truststore_path)
@@ -48,12 +54,26 @@ class TestRevocation(unittest.TestCase):
         self.assertFalse(revocation.crl_check(cert_revoked, cert_revoked_issuer), msg)
         
     def test_get_ocsp_status_true(self):
+<<<<<<< Upstream, based on origin/cc_implementation_asterix
         
         self.assertTrue(revocation.get_ocsp_status(cert,cert_issuer,cert_url,cert_issuer_url), msg)
+=======
+        cert_ocsp_url = revocation.get_ocsp_url(cert)
+        cert_issuer_ocsp_url = revocation.get_ocsp_url(cert_issuer)
+        self.assertTrue(revocation.get_ocsp_status(cert, cert_issuer, 
+                                                   cert_ocsp_url, cert_issuer_ocsp_url), msg)
+>>>>>>> 2870ef5 More corrections to test cases.
     
     def test_get_ocsp_status_false(self):
+<<<<<<< Upstream, based on origin/cc_implementation_asterix
         self.assertTrue(revocation.get_ocsp_status(cert,cert_issuer,cert_url,cert_issuer_url), msg)
         #self.assertTrue(revocation.get_ocsp_status(cert_revoked,cert_revoked,cert_revoked_url,cert_revoked_url), msg)
+=======
+        cert_revoked_ocsp_url = revocation.get_ocsp_url(cert_revoked)
+        cert_revoked_issuer_ocsp_url = revocation.get_ocsp_url(cert_revoked_issuer)
+        self.assertTrue(revocation.get_ocsp_status(cert_revoked, cert_revoked_issuer, 
+                                                   cert_revoked_ocsp_url, cert_revoked_issuer_ocsp_url), msg)
+>>>>>>> 2870ef5 More corrections to test cases.
     
     def test_get_ocsp_url_true(self):
         self.assertIsInstance(revocation.get_ocsp_url(cert), str, msg)    
